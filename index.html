@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Ping Mardargent - Data Scientist & ML</title>
-    <meta name="description" content="Portfolio professionnel de Ping Mardargent. Spécialisée en Data Science, Machine Learning et Data Engineering.">
+    <title>Portfolio | Ping Mardargent - Data Engineer</title>
+    <meta name="description" content="Portfolio professionnel de Ping Mardargent. Spécialisé en Data Engineering (Pipelines de données, BDD vectorielles, Orchestration).">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -53,9 +53,9 @@
             <div class="hero-bg-glow"></div>
             <div class="container hero-container">
                 <div class="hero-content">
-                    <span class="hero-badge">Recherche Alternance Data Scientist & ML (Sept. 2026)</span>
+                    <span class="hero-badge">Data Engineer | Spécialiste Architectures de Données & IA</span>
                     <h1 class="hero-title">
-                        Spécialiste en <span class="text-gradient">Data Science</span> & Machine Learning
+                        Concepteur de <span class="text-gradient">pipelines de données</span> & d'architectures RAG
                     </h1>
                     <p class="hero-subtitle">
                         Passionnée par l'exploitation des données et les solutions d'intelligence artificielle. Forte de 3 ans d'expérience en analyse financière, je conçois des modèles prédictifs et des pipelines de données robustes pour libérer la valeur métier.
@@ -104,7 +104,7 @@
                 <div class="about-grid">
                     <div class="about-info">
                         <h3>Mon profil</h3>
-                        <p>Curieuse et dotée d'une grande capacité d'adaptation, je dispose de trois années d'expérience en analyse de données financières. Récemment formée aux techniques avancées de Data Engineering (conception de pipelines, architectures cloud), je cherche aujourd'hui à intégrer une entreprise dynamique en alternance pour concevoir des modèles de Machine Learning et des architectures d'IA (RAG, agents).</p>
+                        <p>Curieuse et dotée d'une grande capacité d'adaptation, je dispose de trois années d'expérience en analyse de données financières. Récemment certifiée en tant que Data Engineer (conception de pipelines, architectures cloud), j'interviens sur la mise en place d'infrastructures de données robustes, l'orchestration de flux complexes (ETL/ELT), la qualité de la donnée et l'intégration de solutions d'IA modernes (RAG, bases vectorielles).</p>
                         
                         <div class="timeline">
                             <div class="timeline-item">
@@ -187,84 +187,133 @@
                 <div class="section-header">
                     <span class="section-tag">Réalisations</span>
                     <h2 class="section-title">Mes Projets Techniques</h2>
-                    <p class="section-desc">Découvrez une sélection de projets académiques et professionnels illustrant mes compétences en Data Science, IA et Data Engineering.</p>
+                    <p class="section-desc">Découvrez une sélection de projets de Data Engineering, d'orchestration de flux et d'architectures d'IA stockés sur mon compte GitHub.</p>
                 </div>
 
                 <!-- Project Filters -->
                 <div class="project-filters">
                     <button class="filter-btn active" data-filter="all">Tous</button>
                     <button class="filter-btn" data-filter="etl">Ingestion & ETL</button>
-                    <button class="filter-btn" data-filter="streaming">Temps Réel & Streaming</button>
-                    <button class="filter-btn" data-filter="cloud">Cloud & DWH</button>
+                    <button class="filter-btn" data-filter="rag">IA & RAG</button>
+                    <button class="filter-btn" data-filter="ml">Machine Learning</button>
                 </div>
 
                 <!-- Project Grid -->
                 <div class="project-grid">
-                    <!-- Project Card 1 -->
-                    <div class="project-card" data-category="etl">
+                    <!-- Project Card 1: MVP RAG Puls-Events -->
+                    <div class="project-card" data-category="rag">
                         <div class="project-img-container">
-                            <img src="assets/project_etl.png" alt="Système RAG et Backend IA" class="project-img">
-                            <span class="project-category-badge">IA & Backend</span>
+                            <img src="assets/project_dwh.png" alt="MVP RAG Puls-Events" class="project-img">
+                            <span class="project-category-badge">IA & RAG</span>
                         </div>
                         <div class="project-info">
-                            <h3 class="project-card-title">Système RAG pour Analyse RSE</h3>
-                            <p class="project-card-desc">Conception d'un système de Retrieval-Augmented Generation (RAG) avec l'API Mistral AI, base vectorielle FAISS et API FastAPI conteneurisée sous Docker.</p>
-                            <div class="project-tags">
-                                <span class="project-tag-badge">Mistral AI</span>
-                                <span class="project-tag-badge">FAISS</span>
-                                <span class="project-tag-badge">FastAPI</span>
-                                <span class="project-tag-badge">Docker</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Code source du projet RAG">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-                                    Code Source
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 2 -->
-                    <div class="project-card" data-category="streaming">
-                        <div class="project-img-container">
-                            <img src="assets/project_streaming.png" alt="Architecture de streaming temps réel" class="project-img">
-                            <span class="project-category-badge">Streaming</span>
-                        </div>
-                        <div class="project-info">
-                            <h3 class="project-card-title">Pipeline IoT & Streaming</h3>
-                            <p class="project-card-desc">Mise en place d'un flux d'ingestion de données de capteurs en continu avec Apache Spark et Redpanda, avec stockage optimisé dans MongoDB.</p>
-                            <div class="project-tags">
-                                <span class="project-tag-badge">Spark</span>
-                                <span class="project-tag-badge">Redpanda</span>
-                                <span class="project-tag-badge">MongoDB</span>
-                                <span class="project-tag-badge">Docker</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Code source du projet IoT">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
-                                    Code Source
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 3 -->
-                    <div class="project-card" data-category="cloud">
-                        <div class="project-img-container">
-                            <img src="assets/project_dwh.png" alt="Modernisation ETL et bases de données" class="project-img">
-                            <span class="project-category-badge">Cloud & DWH</span>
-                        </div>
-                        <div class="project-info">
-                            <h3 class="project-card-title">Modernisation ETL & Bases de données</h3>
-                            <p class="project-card-desc">Migration et optimisation de requêtes complexes sur PostgreSQL et mise en œuvre d'orchestrations de pipelines de données avec Kestra et Change Data Capture (CDC).</p>
+                            <h3 class="project-card-title">MVP RAG Puls-Events</h3>
+                            <p class="project-card-desc">
+                                Chatbot de recommandation d'événements culturels locaux. Pipeline RAG avec base vectorielle relationnelle et recherche web autonome de repli.<br><br>
+                                <strong>Démonstration &amp; Résultats :</strong> Ingestion auto de 1236 chunks de données OpenAgenda. Recherche géographique spatiale en SQL (Haversine). Recherche de repli web autonome (smolagents). Latence de réponse optimisée (&lt;1.5s).<br><br>
+                                <strong>Valeur ajoutée :</strong> Sécurité d'accès, persistence des discussions en SQL et suite de tests d'intégration automatisés avec pytest.
+                            </p>
                             <div class="project-tags">
                                 <span class="project-tag-badge">PostgreSQL</span>
-                                <span class="project-tag-badge">Kestra</span>
-                                <span class="project-tag-badge">CDC</span>
-                                <span class="project-tag-badge">AWS</span>
+                                <span class="project-tag-badge">pgvector</span>
+                                <span class="project-tag-badge">Chainlit</span>
+                                <span class="project-tag-badge">Mistral AI</span>
+                                <span class="project-tag-badge">smolagents</span>
+                                <span class="project-tag-badge">Docker</span>
+                                <span class="project-tag-badge">pytest</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Code source du projet Cloud">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Code source du projet MVP RAG Puls-Events">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                    Code Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 2: POC Avantages Sportifs -->
+                    <div class="project-card" data-category="etl">
+                        <div class="project-img-container">
+                            <img src="assets/project_etl.png" alt="POC Avantages Sportifs" class="project-img">
+                            <span class="project-category-badge">Ingestion & ETL</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-card-title">POC Avantages Sportifs</h3>
+                            <p class="project-card-desc">
+                                Évaluation de faisabilité d'un programme d'activité physique. Validation de données RH et de géolocalisation pour le calcul des trajets domicile-travail.<br><br>
+                                <strong>Démonstration &amp; Résultats :</strong> Orchestration complète via Kestra. Validation stricte de la qualité des données (Great Expectations). Intégration de l'API Google Maps avec cache local réduisant les coûts de 80%. Alertes Slack.<br><br>
+                                <strong>Valeur ajoutée :</strong> Automatisation complète de l'ingestion, détection proactive des anomalies de qualité de données et maîtrise budgétaire d'APIs.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag-badge">Kestra</span>
+                                <span class="project-tag-badge">Great Expectations</span>
+                                <span class="project-tag-badge">Google Maps API</span>
+                                <span class="project-tag-badge">Python</span>
+                                <span class="project-tag-badge">Slack API</span>
+                                <span class="project-tag-badge">Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Code source du projet POC Avantages Sportifs">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                    Code Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 3: Pipeline de Données Météorologiques -->
+                    <div class="project-card" data-category="etl">
+                        <div class="project-img-container">
+                            <img src="assets/project_streaming.png" alt="Pipeline de Données Météorologiques" class="project-img">
+                            <span class="project-category-badge">Ingestion & ETL</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-card-title">Pipeline de Données Météorologiques</h3>
+                            <p class="project-card-desc">
+                                Architecture ETL multi-sources collectant des données météo locales (fichiers Excel) et externes (API Infoclimat) pour les stocker dans MongoDB.<br><br>
+                                <strong>Démonstration &amp; Résultats :</strong> Script de pré-traitement résolvant les structures complexes Excel (dates en onglets). Ingestion automatique planifiée via Airbyte vers S3 sous format Parquet (stockage colonnes). Nettoyage de données.<br><br>
+                                <strong>Valeur ajoutée :</strong> Modélisation NoSQL flexible et stockage analytique optimisé en cloud storage orienté colonnes.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag-badge">Airbyte</span>
+                                <span class="project-tag-badge">AWS S3</span>
+                                <span class="project-tag-badge">Parquet</span>
+                                <span class="project-tag-badge">MongoDB</span>
+                                <span class="project-tag-badge">Python</span>
+                                <span class="project-tag-badge">Pandas</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Code source du projet Pipeline Météo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
+                                    Code Source
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project Card 4: ML-Prédiction -->
+                    <div class="project-card" data-category="ml">
+                        <div class="project-img-container">
+                            <img src="assets/project_ml.png" alt="ML-Prédiction" class="project-img">
+                            <span class="project-category-badge">Machine Learning</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-card-title">ML-Prédiction</h3>
+                            <p class="project-card-desc">
+                                Modélisation prédictive de la consommation d'énergie et des émissions de CO2 de bâtiments de Seattle à partir de caractéristiques physiques.<br><br>
+                                <strong>Démonstration &amp; Résultats :</strong> Feature Engineering (encodage, transformation logarithmique). Comparaison et optimisation d'algorithmes (Random Forest, XGBoost) avec GridSearch (R² final de 0.82). Déploiement en microservice BentoML.<br><br>
+                                <strong>Valeur ajoutée :</strong> Industrialisation via le packaging du modèle en microservice conteneurisé, prêt pour la mise en production.
+                            </p>
+                            <div class="project-tags">
+                                <span class="project-tag-badge">Scikit-Learn</span>
+                                <span class="project-tag-badge">XGBoost</span>
+                                <span class="project-tag-badge">BentoML</span>
+                                <span class="project-tag-badge">Python</span>
+                                <span class="project-tag-badge">Jupyter</span>
+                                <span class="project-tag-badge">Git</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="project-link-btn" aria-label="Code source du projet ML-Prédiction">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>
                                     Code Source
                                 </a>
@@ -281,7 +330,7 @@
                 <div class="section-header">
                     <span class="section-tag">Me contacter</span>
                     <h2 class="section-title">Démarrons un projet ensemble</h2>
-                    <p class="section-desc">Vous cherchez un profil de Data Scientist ou Machine Learning en alternance à partir de septembre 2026 ? Écrivez-moi !</p>
+                    <p class="section-desc">Vous cherchez un profil de Data Engineer rigoureux, prêt à renforcer vos équipes d'ingénierie ? Écrivez-moi !</p>
                 </div>
 
                 <div class="contact-wrapper">
