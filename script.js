@@ -20,6 +20,67 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ==========================================================================
+    // Language Switcher (FR / EN)
+    // ==========================================================================
+    const langToggleBtn = document.getElementById('lang-toggle');
+    
+    // Check saved preference or system/document default
+    let savedLang = localStorage.getItem('lang');
+    if (!savedLang) {
+        const systemLang = navigator.language || navigator.userLanguage;
+        savedLang = systemLang.startsWith('en') ? 'en' : 'fr';
+    }
+
+    const setLanguage = (lang) => {
+        document.documentElement.setAttribute('lang', lang);
+        localStorage.setItem('lang', lang);
+        if (langToggleBtn) {
+            langToggleBtn.textContent = lang === 'fr' ? 'EN' : 'FR';
+        }
+        updatePlaceholders(lang);
+    };
+
+    const updatePlaceholders = (lang) => {
+        const nameInput = document.getElementById('name');
+        const emailInput = document.getElementById('email');
+        const messageInput = document.getElementById('message');
+        const submitBtn = document.querySelector('.btn-submit');
+        const successStatus = document.getElementById('form-success');
+        const failureStatus = document.getElementById('form-failure');
+
+        if (lang === 'en') {
+            if (nameInput) nameInput.placeholder = 'Your full name';
+            if (emailInput) emailInput.placeholder = 'name@example.com';
+            if (messageInput) messageInput.placeholder = 'Your project, job position, or proposal...';
+            if (submitBtn) {
+                submitBtn.innerHTML = 'Send Message <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>';
+            }
+            if (successStatus) successStatus.textContent = 'Your message has been sent successfully!';
+            if (failureStatus) failureStatus.textContent = 'An error occurred while sending. Please try again.';
+        } else {
+            if (nameInput) nameInput.placeholder = 'Votre nom et prénom';
+            if (emailInput) emailInput.placeholder = 'nom@exemple.com';
+            if (messageInput) messageInput.placeholder = 'Votre projet, poste ou proposition...';
+            if (submitBtn) {
+                submitBtn.innerHTML = 'Envoyer le message <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>';
+            }
+            if (successStatus) successStatus.textContent = 'Votre message a été envoyé avec succès !';
+            if (failureStatus) failureStatus.textContent = 'Une erreur s\'est produite lors de l\'envoi. Veuillez réessayer.';
+        }
+    };
+
+    // Initialize Language
+    setLanguage(savedLang);
+
+    if (langToggleBtn) {
+        langToggleBtn.addEventListener('click', () => {
+            const currentLang = document.documentElement.getAttribute('lang');
+            const nextLang = currentLang === 'fr' ? 'en' : 'fr';
+            setLanguage(nextLang);
+        });
+    }
+
+    // ==========================================================================
     // Mobile Drawer Menu Navigation
     // ==========================================================================
     const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
@@ -177,15 +238,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (isFormValid) {
             const submitBtn = contactForm.querySelector('.btn-submit');
-            const originalBtnText = submitBtn.innerHTML;
+            const currentLang = document.documentElement.getAttribute('lang');
             
             // Mock server sending state
             submitBtn.disabled = true;
-            submitBtn.innerHTML = 'Envoi en cours...';
+            submitBtn.innerHTML = currentLang === 'en' ? 'Sending...' : 'Envoi en cours...';
 
             setTimeout(() => {
                 submitBtn.disabled = false;
-                submitBtn.innerHTML = originalBtnText;
+                updatePlaceholders(currentLang);
                 
                 successStatus.style.display = 'block';
                 contactForm.reset();

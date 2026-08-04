@@ -1034,3 +1034,14 @@ footer {
         text-align: center;
     }
 }
+
+/* ==========================================================================
+   Language Switcher System
+   ========================================================================== */
+html[lang="fr"] [lang="en"] {
+    display: none !important;
+}
+
+html[lang="en"] [lang="fr"] {
+    display: none !important;
+}
