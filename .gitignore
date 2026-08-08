@@ -10,6 +10,3 @@ Thumbs.db
 *.njsproj
 *.sln
 *.sw?
-
-# Project files to ignore
-implementation_plan.md
