@@ -393,7 +393,7 @@ h1, h2, h3, h4 {
 }
 
 .hero-title {
-    font-size: 2.75rem;
+    font-size: 2.2rem;
     margin-bottom: 1.5rem;
     line-height: 1.15;
 }
@@ -949,7 +949,7 @@ footer {
     }
     
     .hero-title {
-        font-size: 2.25rem;
+        font-size: 1.85rem;
     }
 }
 
@@ -963,7 +963,7 @@ footer {
     }
     
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     
     /* Navigation drawer menu for mobile */
