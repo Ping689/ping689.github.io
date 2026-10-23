@@ -381,14 +381,14 @@ h1, h2, h3, h4 {
 
 .hero-badge {
     display: inline-block;
-    padding: 0.4rem 1rem;
+    padding: 0.8rem 1.4rem;
     background-color: rgba(99, 102, 241, 0.1);
     color: var(--accent-indigo);
     border: 1px solid rgba(99, 102, 241, 0.2);
     border-radius: var(--radius-full);
     font-family: var(--font-heading);
     font-weight: 600;
-    font-size: 0.85rem;
+    font-size: 1.25rem;
     margin-bottom: 1.5rem;
 }
 
@@ -447,8 +447,8 @@ h1, h2, h3, h4 {
 
 .avatar-wrapper {
     position: relative;
-    width: 320px;
-    height: 320px;
+    width: 270px;
+    height: 270px;
 }
 
 .avatar-img {
