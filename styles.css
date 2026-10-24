@@ -381,14 +381,14 @@ h1, h2, h3, h4 {
 
 .hero-badge {
     display: inline-block;
-    padding: 0.8rem 1.4rem;
+    padding: 0.7rem 1.2rem;
     background-color: rgba(99, 102, 241, 0.1);
     color: var(--accent-indigo);
     border: 1px solid rgba(99, 102, 241, 0.2);
     border-radius: var(--radius-full);
     font-family: var(--font-heading);
     font-weight: 600;
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     margin-bottom: 1.5rem;
 }
 
